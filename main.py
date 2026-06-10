@@ -6,7 +6,7 @@ from dataset import (
     average_case
 )
 
-from bubble_sort import bubble_sort
+from insertion_sort import insertion_sort
 from selection_sort import selection_sort
 from merge_sort import merge_sort
 from quick_sort import quick_sort
@@ -14,20 +14,16 @@ from quick_sort import quick_sort
 
 # Menghitung waktu eksekusi
 def calculate_time(sort_function, data):
-
     start = time.perf_counter()
-
+    # Semua algoritma di proyek ini mengembalikan array hasil urut
+    # dan (secara umum) tidak perlu melakukan in-place pada input asli.
     sort_function(data.copy())
-
     end = time.perf_counter()
-
     return (end - start) * 1000
 
 
 # Ukuran dataset
 dataset_sizes = [
-    10000,
-    20000,
     100000,
     200000
 ]
@@ -37,8 +33,8 @@ dataset_sizes = [
 algorithms = {
     "Quick Sort": quick_sort,
     "Merge Sort": merge_sort,
-    "Bubble Sort": bubble_sort,
     "Selection Sort": selection_sort,
+    "Insertion Sort": insertion_sort,
 }
 
 
