@@ -8,7 +8,7 @@ Proyek ini dibuat untuk mempelajari dan membandingkan efisiensi berbagai algorit
 
 ## 📂 Algoritma yang Diimplementasikan
 
-- 🔹 Bubble Sort
+- 🔹 Insertion Sort
 - 🔹 Selection Sort
 - 🔹 Insertion Sort
 - 🔹 Quick Sort
